@@ -67,7 +67,8 @@ p{
   background: none;
   border: none;
   color: black;
-  font-size: 1.5rem;
+  font-size: 40px;
+  height: 40px;
   cursor: pointer;
 }
 
@@ -77,9 +78,8 @@ p{
   text-align: right;
   top: 0;
   right: -100%;
-  width: 40%;
+  width: 80%;
   height: 100%;
-  padding: 24px;
   background-color: white;
   box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
   transition: right 0.5s ease-in-out;
@@ -90,7 +90,8 @@ p{
 }
 
 .x{
-  padding-top: 4px;
+  font-size: 40px;
+  height: 40px;
 }
 
 .linkedin {
@@ -109,7 +110,7 @@ p{
   font-size: 28px;
   font-weight: 500;
   display: block;
-  padding-bottom: 40px;
+  padding: 20px 20px 20px 0;
   transition: color 0.3s ease-in-out;
 }
 

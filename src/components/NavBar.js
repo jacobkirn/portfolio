@@ -29,9 +29,9 @@ function NavBar() {
   return (
 	<nav className="navbar">
 	  <Link to="/" ><img className="logo" src={Logo} alt="Logo"/></Link>
-	  <button className="hamburger" onClick={toggleMenu}>
+	  <Link className="hamburger" onClick={toggleMenu}>
 	  	<RiMenu3Fill />
-	  </button>
+	  </Link>
 	  <div ref={menuRef} className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
 		<ul>
 		  <li><Link onClick={toggleMenu}><IoMdClose className='x'/></Link></li>
