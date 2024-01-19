@@ -1,0 +1,170 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'League Spartan', sans-serif;
+}
+
+/* Text Styles */
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+h2{
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h3{
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h4{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+p{
+  font-size: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 50px;
+}
+
+.navbar .hamburger {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Nav Menu */
+.nav-menu {
+  position: fixed;
+  text-align: right;
+  top: 0;
+  right: -100%;
+  width: 40%;
+  height: 100%;
+  padding: 24px;
+  background-color: white;
+  box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+  transition: right 0.5s ease-in-out;
+}
+
+.nav-menu.open {
+  right: 0;
+}
+
+.x{
+  padding-top: 4px;
+}
+
+.linkedin {
+  width: 28px;
+  height: 28px;
+  color: #0077b5;
+}
+
+.nav-menu ul {
+  list-style: none;
+}
+
+.nav-menu ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 500;
+  display: block;
+  padding-bottom: 40px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px; /* Maximum width */
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+
+  .navbar .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    position: static;
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center;
+    background-color: transparent;
+    box-shadow: none;
+    right: auto;
+    width: auto;
+    height: auto;
+    padding: 0;
+  }
+
+  .nav-menu ul {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-menu ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+    text-decoration: none;
+    color: black; /* Adjust the color as needed */
+  }
+
+  .nav-menu ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .x{
+    display: none;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
