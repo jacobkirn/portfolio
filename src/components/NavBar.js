@@ -28,7 +28,7 @@ function NavBar() {
 
   return (
 	<nav className="navbar">
-	  <Link to="/" ><img className="logo" src={Logo}/></Link>
+	  <Link to="/" ><img className="logo" src={Logo} alt="Logo"/></Link>
 	  <button className="hamburger" onClick={toggleMenu}>
 	  	<RiMenu3Fill />
 	  </button>
