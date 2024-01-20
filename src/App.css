@@ -20,8 +20,14 @@ time, mark, audio, video {
     vertical-align: baseline;
 }
 
+/* Disable text cursor on all elements */
+*:not(input):not(textarea) {
+  cursor: default;
+}
+
 body, html {
   height: 100%;
+  background-color: #f9f9f9;
   font-family: 'League Spartan', sans-serif;
 }
 
@@ -29,16 +35,20 @@ body, html {
 h1 {
   font-size: 48px;
   font-weight: 600;
+  line-height: 1.25em;
+  letter-spacing: -1px;
 }
 
 h2{
   font-size: 40px;
   font-weight: 600;
+  line-height: 1.25em;
 }
 
 h3{
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 500;
+  line-height: 1.25em;
 }
 
 h4{
@@ -59,8 +69,8 @@ p{
   padding: 20px;
 }
 
-.logo {
-  width: 50px;
+#logo {
+  width: 60px;
 }
 
 .navbar .hamburger {
@@ -89,12 +99,12 @@ p{
   right: 0;
 }
 
-.x{
+#x{
   font-size: 40px;
   height: 40px;
 }
 
-.linkedin {
+#linkedin {
   width: 28px;
   height: 28px;
   color: #0077b5;
@@ -110,15 +120,97 @@ p{
   font-size: 28px;
   font-weight: 500;
   display: block;
-  padding: 20px 20px 20px 0;
+  padding: 30px 20px 20px 0;
   transition: color 0.3s ease-in-out;
 }
+
+#homebanner-heading{
+  padding: 0 40px 0 0;
+}
+
+#profile-section{
+  background-color: #0d0d0d;
+  color: #f9f9f9;
+  padding: 160px 0 0 0;
+}
+
+.bike-container {
+  position: relative;
+  height: 200px; /* Adjust based on your requirement */
+  overflow: hidden; /* Keeps the bike inside the container */
+}
+
+.bike-icon {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -15px;
+  color: #f9f9f9;
+  font-size: 100px; /* Adjust the size of the icon */
+  animation: moveBike 15s linear infinite; /* Adjust timing as needed */
+}
+
+.bike-container {
+  position: relative;
+  height: 160px; /* Adjust based on your requirement */
+  overflow: hidden; /* Keeps the bike inside the container */
+}
+
+.bike-icon {
+  position: absolute;
+  bottom: 0;
+  font-size: 80px; /* Adjust the size of the icon */
+  animation: moveBike 10s linear infinite; /* Adjust timing as needed */
+}
+
+#portfolio-section{
+  padding: 160px 0;
+}
+
+#stylecomain{
+  width: 100%;
+}
+
+@keyframes moveBike {
+  0% {
+    left: -100px; /* Start off-screen */
+  }
+  100% {
+    left: 100%; /* Move across to the full width */
+  }
+}
+
+
+
+@keyframes moveBike {
+  0% {
+    left: -100px; /* Start off-screen */
+  }
+  100% {
+    left: 100%; /* Move across to the full width */
+  }
+}
+
+
 
 /* Container */
 .container {
   width: 90%;
   margin: auto;
   max-width: 1200px; /* Maximum width */
+}
+
+#align-center{
+  display: flex;
+  align-items: center;
+}
+
+#profile-icon{
+  font-size: 40px;
+  margin: 0 20px 0px 0;
+}
+
+#profile-heading{
+  margin-bottom: -8px;
 }
 
 /* Media Queries for Larger Screens */
@@ -161,11 +253,79 @@ p{
     text-decoration: underline;
   }
 
-  .x{
+  #x{
     display: none;
   }
 
   .container {
     padding: 0 15px;
   }
+
+  #flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #homebanner{
+    align-items: center;
+    padding: 40px 0 80px 0;
+  }
+
+  #cubes{
+    width: 60%;
+  }
+
+  .row{
+    display: flex;
+  }
+
+  #mb-20{
+    margin-bottom: 20px;
+  }
+
+  #mb-40{
+    margin-bottom: 40px;
+  }
+
+  #mb-80{
+    margin-bottom: 80px;
+  }
+
+  #mb-160{
+    margin-bottom: 160px;
+  }
+
+  .col-2{
+    width: 16.66%;
+  }
+  
+  .col-3{
+    width: 25%;
+  }
+
+  .col-4{
+    width: 33.33%;
+  }
+
+  .col-6{
+    width: 50%;
+  }
+
+  .col-8{
+    width: 66.66%;
+  }
+
+  .col-9{
+    width: 75%;
+  }
+
+  .col-10{
+    width: 83.33%;
+  }
+
+  .col-12{
+    width: 100%;
+  }
+
 }

@@ -28,16 +28,16 @@ function NavBar() {
 
   return (
 	<nav className="navbar">
-	  <Link to="/" ><img className="logo" src={Logo} alt="Logo"/></Link>
+	  <Link to="/" ><img id="logo" src={Logo} alt="Logo"/></Link>
 	  <Link className="hamburger" onClick={toggleMenu}>
 	  	<RiMenu3Fill />
 	  </Link>
 	  <div ref={menuRef} className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
 		<ul>
-		  <li><Link onClick={toggleMenu}><IoMdClose className='x'/></Link></li>
+		  <li><Link onClick={toggleMenu}><IoMdClose id='x'/></Link></li>
 		  <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
 		  <li><Link to="/portfolio" onClick={toggleMenu}>Portfolio</Link></li>
-		  <li><Link to="https://www.linkedin.com/in/jacobkirn" target='_blank' ><FaLinkedin className='linkedin'/></Link></li>
+		  <li><Link to="https://www.linkedin.com/in/jacobkirn" target='_blank' ><FaLinkedin id='linkedin'/></Link></li>
 		</ul>
 	  </div>
 	</nav>
