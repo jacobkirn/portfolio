@@ -35,7 +35,7 @@ body, html {
 h1 {
   font-size: 48px;
   font-weight: 600;
-  line-height: 1.25em;
+  line-height: 1.2em;
   letter-spacing: -1px;
 }
 
@@ -54,19 +54,47 @@ h3{
 h4{
   font-size: 24px;
   font-weight: 600;
+  line-height: 1.25em;
 }
 
 p{
   font-size: 20px;
 }
 
+button{
+  background-color: #f9f9f9;
+  border: 4px solid #0d0d0d;
+  padding: 12px 16px 10px 16px;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+button:hover{
+  background-color: #0d0d0d;
+  color: white;
+}
+
 /* Navbar Styles */
 .navbar {
+  background-color: #f9f9f9;
   color: black;
+  position: sticky;
+  top: 0;
+  z-index: 10; /* Ensure it's above other content */
+  transition: box-shadow .5s ease;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+}
+
+.navbar.scrolled {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 #logo {
@@ -92,7 +120,7 @@ p{
   height: 100%;
   background-color: white;
   box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
-  transition: right 0.5s ease-in-out;
+  transition: right 0.3s ease-in-out;
 }
 
 .nav-menu.open {
@@ -159,11 +187,11 @@ p{
   position: absolute;
   bottom: 0;
   font-size: 80px; /* Adjust the size of the icon */
-  animation: moveBike 10s linear infinite; /* Adjust timing as needed */
+  animation: moveBike 20s linear infinite; /* Adjust timing as needed */
 }
 
 #portfolio-section{
-  padding: 160px 0;
+  padding: 80px 0;
 }
 
 #stylecomain{
@@ -179,8 +207,6 @@ p{
   }
 }
 
-
-
 @keyframes moveBike {
   0% {
     left: -100px; /* Start off-screen */
@@ -189,8 +215,6 @@ p{
     left: 100%; /* Move across to the full width */
   }
 }
-
-
 
 /* Container */
 .container {
@@ -269,7 +293,7 @@ p{
 
   #homebanner{
     align-items: center;
-    padding: 40px 0 80px 0;
+    padding: 80px 0 80px 0;
   }
 
   #cubes{
@@ -278,6 +302,7 @@ p{
 
   .row{
     display: flex;
+    align-items: center;
   }
 
   #mb-20{

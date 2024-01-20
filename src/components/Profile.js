@@ -6,7 +6,7 @@ function Profile() {
   return <div>
         <section id="profile-section">
             <div className='container'>
-                <div className='row' id="mb-40">
+                <div className='row' id="mb-20">
                     <div id="align-center">
                         <FaRegUserCircle id="profile-icon"/>
                         <h2 id="profile-heading">Profile</h2>
