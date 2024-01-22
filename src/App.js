@@ -4,17 +4,21 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './Home';
 import Portfolio from './Portfolio';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <Router>
-      <NavBar />
+    <div>
+      <Router>
+        <NavBar />
         {/* Update from <Switch> to <Routes> */}
         <Routes>
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/" element={<Home />} />
         </Routes>
-    </Router>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

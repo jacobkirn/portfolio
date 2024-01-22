@@ -1,6 +1,5 @@
 import React from 'react';
 import MovingBike from './MovingScene';
-import { FaRegUserCircle } from "react-icons/fa";
 
 function Profile() {
   return <div>
@@ -8,7 +7,6 @@ function Profile() {
             <div className='container'>
                 <div className='row' id="mb-20">
                     <div id="align-center">
-                        <FaRegUserCircle id="profile-icon"/>
                         <h2 id="profile-heading">Profile</h2>
                     </div>
                 </div>
