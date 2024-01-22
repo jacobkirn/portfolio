@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaRegFolderOpen } from "react-icons/fa";
 import StyleCoHomeBanner from './StyleCoHomeBanner.js';
 
 

@@ -1,23 +1,90 @@
 /* CSS Reset */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* Disable text cursor on all elements */
@@ -25,7 +92,8 @@ time, mark, audio, video {
   cursor: default;
 }
 
-body, html {
+body,
+html {
   height: 100%;
   background-color: #f9f9f9;
   font-family: 'League Spartan', sans-serif;
@@ -39,29 +107,29 @@ h1 {
   letter-spacing: -1px;
 }
 
-h2{
+h2 {
   font-size: 40px;
   font-weight: 600;
   line-height: 1.25em;
 }
 
-h3{
+h3 {
   font-size: 32px;
   font-weight: 500;
   line-height: 1.25em;
 }
 
-h4{
+h4 {
   font-size: 24px;
   font-weight: 600;
   line-height: 1.25em;
 }
 
-p{
+p {
   font-size: 20px;
 }
 
-button{
+button {
   background-color: #f9f9f9;
   border: 4px solid #0d0d0d;
   padding: 12px 16px 10px 16px;
@@ -74,7 +142,7 @@ button{
   gap: 12px;
 }
 
-button:hover{
+button:hover {
   background-color: #0d0d0d;
   color: white;
 }
@@ -85,7 +153,8 @@ button:hover{
   color: black;
   position: sticky;
   top: 0;
-  z-index: 10; /* Ensure it's above other content */
+  z-index: 10;
+  /* Ensure it's above other content */
   transition: box-shadow .5s ease;
   display: flex;
   justify-content: space-between;
@@ -119,7 +188,7 @@ button:hover{
   width: 80%;
   height: 100%;
   background-color: white;
-  box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
   transition: right 0.3s ease-in-out;
 }
 
@@ -127,7 +196,7 @@ button:hover{
   right: 0;
 }
 
-#x{
+#x {
   font-size: 40px;
   height: 40px;
 }
@@ -152,20 +221,34 @@ button:hover{
   transition: color 0.3s ease-in-out;
 }
 
-#homebanner-heading{
+#homebanner-heading {
   padding: 0 40px 0 0;
 }
 
-#profile-section{
-  background-color: #0d0d0d;
+#profile-section {
   color: #f9f9f9;
+  background-color: #0d0d0d;
   padding: 160px 0 0 0;
+}
+
+#profile-section a {
+  color: white;
+}
+
+#profile-section a:hover {
+  color: #FBBC1E;
+}
+
+#profile-section a:active {
+  color: #b38001;
 }
 
 .bike-container {
   position: relative;
-  height: 200px; /* Adjust based on your requirement */
-  overflow: hidden; /* Keeps the bike inside the container */
+  height: 200px;
+  /* Adjust based on your requirement */
+  overflow: hidden;
+  /* Keeps the bike inside the container */
 }
 
 .bike-icon {
@@ -173,46 +256,58 @@ button:hover{
   bottom: 0;
   margin-bottom: -15px;
   color: #f9f9f9;
-  font-size: 100px; /* Adjust the size of the icon */
-  animation: moveBike 15s linear infinite; /* Adjust timing as needed */
+  font-size: 100px;
+  /* Adjust the size of the icon */
+  animation: moveBike 10s linear infinite;
+  /* Adjust timing as needed */
 }
 
 .bike-container {
   position: relative;
-  height: 160px; /* Adjust based on your requirement */
-  overflow: hidden; /* Keeps the bike inside the container */
+  height: 160px;
+  /* Adjust based on your requirement */
+  overflow: hidden;
+  /* Keeps the bike inside the container */
 }
 
 .bike-icon {
   position: absolute;
   bottom: 0;
-  font-size: 80px; /* Adjust the size of the icon */
-  animation: moveBike 20s linear infinite; /* Adjust timing as needed */
+  font-size: 80px;
+  /* Adjust the size of the icon */
+  animation: moveBike 20s linear infinite;
+  /* Adjust timing as needed */
 }
 
-#portfolio-section{
+#portfolio-section {
   padding: 80px 0;
 }
 
-#stylecomain{
+#stylecomain {
   width: 100%;
 }
 
 @keyframes moveBike {
   0% {
-    left: -100px; /* Start off-screen */
+    left: -100px;
+    /* Start off-screen */
   }
+
   100% {
-    left: 100%; /* Move across to the full width */
+    left: 100%;
+    /* Move across to the full width */
   }
 }
 
 @keyframes moveBike {
   0% {
-    left: -100px; /* Start off-screen */
+    left: -100px;
+    /* Start off-screen */
   }
+
   100% {
-    left: 100%; /* Move across to the full width */
+    left: 100%;
+    /* Move across to the full width */
   }
 }
 
@@ -220,21 +315,125 @@ button:hover{
 .container {
   width: 90%;
   margin: auto;
-  max-width: 1200px; /* Maximum width */
+  max-width: 1200px;
+  /* Maximum width */
 }
 
-#align-center{
+#align-center {
   display: flex;
   align-items: center;
 }
 
-#profile-icon{
-  font-size: 40px;
+#profile-icon {
+  font-size: 32px;
   margin: 0 20px 0px 0;
 }
 
-#profile-heading{
+#profile-heading {
   margin-bottom: -8px;
+}
+
+#rabbithole-section {
+  background-color: #0758c9;
+  color: #f9f9f9;
+  padding: 160px 0;
+}
+
+#rabbitholes {
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+#rabbitholes h3 {
+  margin-top: -20px;
+  text-align: center;
+}
+
+#rabbitholes button {
+  width: 100%;
+  justify-content: center;
+}
+
+#rabbitholes a {
+  text-decoration: none;
+}
+
+#folders {
+  width: 100%;
+  height: auto;
+  color: #F8D775;
+  position: relative;
+  top: 0;
+  transition: top ease 0.3s;
+}
+
+#folders:hover {
+  top: -8px;
+}
+
+.popup {
+  position: fixed;
+  width: 600px;
+  border: 4px solid #0d0d0d;
+  background-color: #f9f9f9;
+  user-select: none;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.popup-header {
+  background: linear-gradient(-45deg, #ff6ec4, #7873f5, #ffd98e, #ff6ec4);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  background-color: #d1d1d1;
+  cursor: grab;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid #0d0d0d;
+  padding: 0 0 0 12px;
+}
+
+.popup-header:active{
+  cursor: grabbing;
+}
+
+.popup-header h3 {
+  margin: 0;
+  cursor: grab;
+  margin-bottom: -6px;
+}
+
+.popup-header button {
+  cursor: pointer;
+  padding: 12px;
+  border-right: none;
+  border-bottom: none;
+  border-top: none;
+  background-color: transparent;
+}
+
+.popup-header button:hover{
+  background-color: red;
+  color: #0d0d0d;
+}
+
+.popup-content {
+  padding: 12px;
+  overflow: auto;
+}
+
+.popup-content a {
+  color: blue;
+}
+
+.popup-content a:hover {
+  color: #0d0d0d;
+  cursor: pointer;
 }
 
 /* Media Queries for Larger Screens */
@@ -247,7 +446,8 @@ button:hover{
   .nav-menu {
     position: static;
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center;
+    /* Align items vertically */
     justify-content: center;
     background-color: transparent;
     box-shadow: none;
@@ -259,7 +459,8 @@ button:hover{
 
   .nav-menu ul {
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center;
+    /* Align items vertically */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -270,14 +471,15 @@ button:hover{
     padding: 0.5rem 1rem;
     font-size: 20px;
     text-decoration: none;
-    color: black; /* Adjust the color as needed */
+    color: black;
+    /* Adjust the color as needed */
   }
 
   .nav-menu ul li a:hover {
     text-decoration: underline;
   }
 
-  #x{
+  #x {
     display: none;
   }
 
@@ -285,71 +487,71 @@ button:hover{
     padding: 0 15px;
   }
 
-  #flex{
+  #flex {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  #homebanner{
+  #homebanner {
     align-items: center;
     padding: 80px 0 80px 0;
   }
 
-  #cubes{
+  #cubes {
     width: 60%;
   }
 
-  .row{
+  .row {
     display: flex;
     align-items: center;
   }
 
-  #mb-20{
+  #mb-20 {
     margin-bottom: 20px;
   }
 
-  #mb-40{
+  #mb-40 {
     margin-bottom: 40px;
   }
 
-  #mb-80{
+  #mb-80 {
     margin-bottom: 80px;
   }
 
-  #mb-160{
+  #mb-160 {
     margin-bottom: 160px;
   }
 
-  .col-2{
+  .col-2 {
     width: 16.66%;
   }
-  
-  .col-3{
+
+  .col-3 {
     width: 25%;
   }
 
-  .col-4{
+  .col-4 {
     width: 33.33%;
   }
 
-  .col-6{
+  .col-6 {
     width: 50%;
   }
 
-  .col-8{
+  .col-8 {
     width: 66.66%;
   }
 
-  .col-9{
+  .col-9 {
     width: 75%;
   }
 
-  .col-10{
+  .col-10 {
     width: 83.33%;
   }
 
-  .col-12{
+  .col-12 {
     width: 100%;
   }
 
