@@ -11,9 +11,9 @@ function StyleCoHomeBanner() {
           <h2 id="mb-20">AR Fitting Room for StyleCo</h2>
           <button>Case Study <HiMiniArrowLongRight /></button>
         </div>
-        <div className='col-4' >
-          <div className="video-container" id="flex">
-            <video src={Phones} muted loop autoPlay style={{ width: '80%', height: 'auto' }} />
+        <div className='col-4' id="flex">
+          <div className="video-container">
+            <video src={Phones} muted loop autoPlay />
           </div>
         </div>
       </div>

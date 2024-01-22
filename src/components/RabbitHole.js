@@ -7,7 +7,7 @@ function RabbitHole() {
     const [highestZIndex, setHighestZIndex] = useState(0);
 
     const popupWidth = 600; // Width of the popup
-    const popupHeight = 150; // Estimated height of the popup
+    const popupHeight = 300; // Estimated height of the popup
 
     const getCenterPosition = () => {
         const viewportWidth = window.innerWidth;
@@ -74,27 +74,34 @@ function RabbitHole() {
         document.addEventListener('mouseup', onMouseUp);
     };
 
-    const folderTypes = ['📰 Articles', '🎙️ Podcasts', '🛠️ Tools', '💻 Websites'];
+    const folderTypes = {
+        'Articles': { emoji: '📰', text: 'Articles' },
+        'Podcasts': { emoji: '🎙️', text: 'Podcasts' },
+        'Tools': { emoji: '🛠️', text: 'Tools' },
+        'Websites': { emoji: '💻', text: 'Websites' }
+    };
 
     const folderContent = {
-        '📰 Articles': (
+        'Articles': (
             <div>
                 <h4><a href="https://limited.systems/articles/frugal-computing/" target='_blank' rel="noreferrer">Frugal Computing: On the need for low-carbon and sustainable computing and the path towards zero-carbon computing.</a></h4>
             </div>
         ),
-        '🎙️ Podcasts': (
+        'Podcasts': (
             <div>
                 <h4><a href="https://open.spotify.com/episode/4Z5isq5B0cvWumaLwaXOKq?si=bc2ea4ea8759457e" target='_blank' rel="noreferrer">UX Podcast #298: Colonised Thinking and Figma</a></h4>
             </div>
         ),
-        '🛠️ Tools': (
+        'Tools': (
             <div>
+                <h4><a href="https://www.uiguideline.com/components" target='_blank' rel="noreferrer">UI Guideline: Component Standardization</a></h4>
+                <hr />
                 <h4><a href="https://huemint.com/" target='_blank' rel="noreferrer">Huemint: AI color palette generator</a></h4>
                 <hr />
                 <h4><a href="https://fontjoy.com/" target='_blank' rel="noreferrer">Fontjot: AI font pairing</a></h4>
             </div>
         ),
-        '💻 Websites': (
+        'Websites': (
             <div>
                 <h4><a href="https://www.webdesignmuseum.org/" target='_blank' rel="noreferrer">Web Design Museum</a></h4>
                 <hr />
@@ -116,28 +123,28 @@ function RabbitHole() {
                         <h3>A semi-curated list of interesting things.</h3>
                     </div>
                     <div className='row' id="rabbitholes">
-                        {folderTypes.map(type => (
+                        {Object.entries(folderTypes).map(([type, { text }]) => (
                             <div key={type} className='col-3' onClick={() => handleFolderClick(type)}>
                                 <PiFoldersFill id="folders" />
-                                <h3>{type}</h3>
+                                <h3>{text}</h3>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {folderTypes.map(type => {
+            {Object.entries(folderTypes).map(([type, { emoji, text }]) => {
                 const popupState = openPopups[type];
                 return popupState && popupState.open && (
                     <div
                         key={type}
                         id={`popup-${type}`}
                         className="popup"
-                        style={{ left: popupState.position.left, top: popupState.position.top, zIndex: popupState.zIndex }} // Apply z-index here
+                        style={{ left: popupState.position.left, top: popupState.position.top, zIndex: popupState.zIndex }}
                         onMouseDown={(e) => e.stopPropagation()}
                     >
                         <div className="popup-header" onMouseDown={(e) => startDrag(e, type)}>
-                            <h4>{type}</h4>
+                            <h4>{emoji} {text}</h4>
                             <button onClick={(e) => handleCloseClick(type, e)}><IoCloseSharp /></button>
                         </div>
                         <div className="popup-content">
