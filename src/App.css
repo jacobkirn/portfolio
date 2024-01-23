@@ -28,6 +28,7 @@ h1 {
   font-size: 40px;
   font-weight: 600;
   line-height: 1.2em;
+  letter-spacing: -0.5px;
 }
 
 h2 {
@@ -153,7 +154,7 @@ button:hover {
 /* Home Banner */
 
 #homebanner {
-  padding: 40px 0 80px 0;
+  padding: 20px 0 80px 0;
 }
 
 #homebanner button {
@@ -188,36 +189,28 @@ button:hover {
   padding: 0 0 40px 0;
 }
 
-#profile-text-m h3 {
-  position: relative; /* Needed for absolute positioning of pseudo-element */
-  padding-top: 8px;
-  padding-left: 30px; /* Adjust as needed */
-  margin-bottom: 40px;
-  line-height: 40px;
-}
+#profile-text-m {
+  position: relative;
+  }
 
-#profile-text-m h3::before {
+#profile-text-m::before {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
-  height: 100%;
-  width: 8px; /* Width of the border */
-  background: linear-gradient(#ff6ec4, #7873f5, #ffd98e, #ff6ec4);
-  background-size: 400% 400%;
-  animation: gradientAnimation 1s ease infinite;
+  bottom: 0;
+  width: 10px; /* Width of the gradient border */
+  background: linear-gradient(to bottom, #FF6EC4, #7873F5); /* Modern pink to purple gradient */
+  z-index: 0;
 }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+#profile-text-m h3 {
+  position: relative;
+  padding-top: 10px;
+  padding-left: 32px;
+  margin-bottom: 20px;
+  line-height: 40px;
+  z-index: 1; /* Ensure h3 is above the gradient */
 }
 
 #profile-section a {
