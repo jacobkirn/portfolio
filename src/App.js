@@ -11,6 +11,7 @@ function App() {
   return (
     <div>
       <Router>
+        <div id='d'>
           <AnimatedCursor
             innerSize={20}
             outerSize={40}
@@ -42,6 +43,7 @@ function App() {
               '.popup-header'
             ]}
           />
+        </div>
         <NavBar />
         < Routes >
           <Route path="/portfolio" element={<Portfolio />} />
