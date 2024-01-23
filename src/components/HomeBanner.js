@@ -9,7 +9,8 @@ function HomeBanner() {
         <img id="boxes" src={Boxes} alt="boxes" />
             <div className='row' id="homebanner">
                 <div className='col-8' id="homebanner-heading">
-                    <h1>👋 I'm Jacob Kirn, a UX Designer based in Grand Rapids, MI.</h1>
+                    <h1 id="d">👋 I'm Jacob Kirn, a UX Designer based in Grand Rapids, MI.</h1>
+                    <h1 id="m">👋 I'm Jacob Kirn, a UX Designer based in Grand Rapids, Michigan.</h1>
                     <button>View Portfolio <HiMiniArrowLongRight /></button>
                 </div>
                 <div className='col-4' id="flex">

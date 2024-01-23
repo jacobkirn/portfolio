@@ -14,7 +14,7 @@ function Profile() {
                     <h3>User Experience grad student at Michigan State University.</h3>
                     <h3>Currently solving warehouse automation problems at <a href="https://www.dematic.com/" target='_blank' rel="noreferrer">Dematic</a>.</h3> 
                     <h3>Practiced in design, development, and documentation.</h3>
-                    <h3>Pursuing all sorts of creative and digital endeavors.</h3>
+                    <h3>Pursuing all sorts of creative and digital opportunities.</h3>
                 </div>
                 <div className='row' id="profile-text-d">
                     <h3>User Experience graduate student at Michigan State University. <br />Currently solving warehouse automation problems at <a href="https://www.dematic.com/" target='_blank' rel="noreferrer">Dematic</a>. <br />Practiced in design, development, and documentation. <br />Interested in all sorts of creative things.</h3>

@@ -160,6 +160,10 @@ button:hover {
   margin-top: 20px;
 }
 
+#homebanner-heading #d {
+  display: none;
+}
+
 #boxes {
   width: 100%;
 }
@@ -529,6 +533,14 @@ button:hover {
 
   #homebanner-heading {
     padding-right: 40px;
+  }
+
+  #homebanner-heading #m {
+    display: none;
+  }
+
+  #homebanner-heading #d {
+    display: block;
   }
 
   #homebanner button {
