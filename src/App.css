@@ -330,7 +330,7 @@ button:hover {
   }
   
   #rabbitholes {
-    margin-top: 10px;
+    margin-top: -10px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -340,7 +340,7 @@ button:hover {
   }
   
   #rabbitholes h3 {
-    font-size: 24px;
+    font-size: 28px;
     margin-top: -20px;
     text-align: center;
   }
@@ -425,6 +425,8 @@ button:hover {
   
   .popup-content a {
     color: blue;
+    font-size: 24px;
+    line-height: 20px;
   }
   
   .popup-content a:hover {
