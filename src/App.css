@@ -285,6 +285,10 @@ button:hover {
   margin-bottom: 20px;
 }
 
+#d {
+  display: none;
+}
+
 /* Container */
 .container {
   width: 90%;
@@ -615,6 +619,10 @@ button:hover {
 
   .video-container {
     padding-bottom: 0px;
+  }
+
+  #d {
+    display: block;
   }
 
   .row {
