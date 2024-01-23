@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import Phones from '../videos/phone_animation_styleco.mp4';
 import { HiMiniArrowLongRight } from "react-icons/hi2";
 
 function StyleCoHomeBanner() {
+  const videoRef = useRef(null);
   const preventBehavior = (event) => {
     event.preventDefault();
   };
+
+  useEffect(() => {
+    // When the component mounts, try to play the video
+    const playVideo = async () => {
+      try {
+        await videoRef.current.play();
+      } catch (err) {
+        console.error("Video play failed", err);
+      }
+    };
+
+    playVideo();
+  }, [])
 
   return (
     <div className='container'>
@@ -18,12 +32,14 @@ function StyleCoHomeBanner() {
         <div className='col-4' id="flex">
           <div className="video-container">
             <video
+              ref={videoRef}
               src={Phones}
               muted
               playsInline
               loop
               autoPlay
-              onClick={preventBehavior} // Add onClick handler here
+              preload="auto"
+              onClick={preventBehavior}
             />
           </div>
         </div>
