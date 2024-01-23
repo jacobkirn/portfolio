@@ -437,13 +437,10 @@ button:hover {
 #footer {
   background-color: #0d0d0d;
   color: #f9f9f9;
-  height: 104px;
-  display: flex;
-  align-items: center;
+  padding: 20px;
 }
 
 #footer h4 {
-  margin-left: 20px;
   margin-bottom: -8px;
   font-weight: 500;
 }
