@@ -10,9 +10,7 @@ function Home() {
       <HomeBanner />
       <Profile />
       <ProfileBanner />
-      <div id="d">
-        <RabbitHole />
-      </div>
+      <RabbitHole />
     </div>
   </div>;
 }
