@@ -94,7 +94,7 @@ button:hover {
 }
 
 #logo {
-  width: 50px;
+  width: 40px;
   cursor: pointer;
 }
 
@@ -102,8 +102,8 @@ button:hover {
   background: none;
   border: none;
   color: black;
-  font-size: 40px;
-  height: 40px;
+  font-size: 32px;
+  height: 32px;
   cursor: pointer;
 }
 
@@ -126,8 +126,9 @@ button:hover {
 }
 
 #x {
-  font-size: 40px;
-  height: 40px;
+  font-size: 32px;
+  height: 32px;
+  margin-bottom: -8px;
 }
 
 #linkedin {
@@ -191,10 +192,9 @@ button:hover {
 
 #profile-text-m h3 {
   position: relative; /* Needed for absolute positioning of pseudo-element */
-  padding-top: 8px;
+  padding-top: 10px;
   padding-left: 30px; /* Adjust as needed */
-  margin-bottom: 40px;
-  line-height: 40px;
+  margin-bottom: 20px;
 }
 
 #profile-text-m h3::before {
