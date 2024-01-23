@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import Phones from '../videos/phone_animation_styleco.mp4';
 import { HiMiniArrowLongRight } from "react-icons/hi2";
 
@@ -27,7 +28,7 @@ function StyleCoHomeBanner() {
         <div className='col-8'>
           <h4 id="mb-20">UX/UI</h4>
           <h2 id="mb-20">AR Fitting Room for StyleCo</h2>
-          <button>Case Study <HiMiniArrowLongRight /></button>
+          <Link to="/portfolio/styleco"><button>Case Study <HiMiniArrowLongRight /></button></Link>
         </div>
         <div className='col-4' id="flex">
           <div className="video-container">

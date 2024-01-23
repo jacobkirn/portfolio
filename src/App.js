@@ -5,6 +5,7 @@ import AnimatedCursor from "react-animated-cursor"
 import NavBar from './components/NavBar';
 import Home from './Home';
 import Portfolio from './Portfolio';
+import StyleCo from './StyleCo';
 import Footer from './components/Footer';
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
         </div>
         <NavBar />
         < Routes >
+          <Route path="/portfolio/styleco" element={<StyleCo />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/" element={<Home />} />
         </Routes>
