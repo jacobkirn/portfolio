@@ -204,7 +204,7 @@ button:hover {
   top: 0;
   height: 100%;
   width: 8px; /* Width of the border */
-  background: linear-gradient(#ff6ec4, #7873f5, #ffd98e, #ff6ec4);
+  background: linear-gradient(#ff6ec4, #7873f5, #ff6ec4);
   background-size: 400% 400%;
 }
 
@@ -259,7 +259,7 @@ button:hover {
 /* Portfolio Section */
 
 #portfolio-section {
-  padding: 80px 0;
+  padding: 40px 0 80px 0;
 }
 
 #portfolio-section .row {
