@@ -47,7 +47,7 @@ function RabbitHole() {
         e.preventDefault();
         let startX = e.clientX;
         let startY = e.clientY;
-        const headerHeight = 104; // Height of the header
+        const headerHeight = 90; // Height of the header
 
         const onMouseMove = (event) => {
             let dx = event.clientX - startX;
@@ -114,12 +114,10 @@ function RabbitHole() {
         <div>
             <section id="rabbithole-section">
                 <div className='container'>
-                    <div className='row' id="mb-20">
-                        <div id="align-center">
-                            <h2 id="profile-heading">Rabbit Holes</h2>
-                        </div>
+                    <div className='row' id="mb-10">
+                        <h2 id="profile-heading">Rabbit Holes</h2>
                     </div>
-                    <div className='row'>
+                    <div className='row' id="mb-20">
                         <h3>A semi-curated list of interesting things.</h3>
                     </div>
                     <div className='row' id="rabbitholes">
