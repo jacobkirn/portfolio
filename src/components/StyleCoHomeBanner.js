@@ -3,6 +3,10 @@ import Phones from '../videos/phone_animation_styleco.mp4';
 import { HiMiniArrowLongRight } from "react-icons/hi2";
 
 function StyleCoHomeBanner() {
+  const preventBehavior = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <div className='container'>
       <div className='row'>
@@ -13,7 +17,14 @@ function StyleCoHomeBanner() {
         </div>
         <div className='col-4' id="flex">
           <div className="video-container">
-            <video src={Phones} muted loop autoPlay />
+            <video
+              src={Phones}
+              muted
+              playsInline
+              loop
+              autoPlay
+              onClick={preventBehavior} // Add onClick handler here
+            />
           </div>
         </div>
       </div>

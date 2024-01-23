@@ -182,7 +182,15 @@ button:hover {
 }
 
 #profile-heading {
-  padding: 0 0 20px 0;
+  padding: 0 0 40px 0;
+}
+
+#profile-text-m h3 {
+  border-left: solid 8px #FBBC1E;
+  padding-top: 8px;
+  padding-left: 20px;
+  margin-bottom: 40px;
+  line-height: 40px;
 }
 
 #profile-section a {
@@ -209,7 +217,7 @@ button:hover {
 
 .bike-container {
   position: relative;
-  height: 100px;
+  height: 80px;
   overflow: hidden;
 }
 
@@ -246,6 +254,7 @@ button:hover {
 
 #portfolio-section video {
   width: 100%;
+  pointer-events: none;
 }
 
 .video-container {
