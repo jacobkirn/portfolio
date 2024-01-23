@@ -84,7 +84,7 @@ function RabbitHole() {
     const folderContent = {
         'Articles': (
             <div>
-                <h4><a href="https://limited.systems/articles/frugal-computing/" target='_blank' rel="noreferrer">Frugal Computing: On the need for low-carbon and sustainable computing and the path towards zero-carbon computing.</a></h4>
+                <h4><a href="https://limited.systems/articles/frugal-computing/" target='_blank' rel="noreferrer">Frugal Computing: On the need for low-carbon and sustainable computing</a></h4>
             </div>
         ),
         'Podcasts': (
