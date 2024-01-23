@@ -333,6 +333,7 @@ button:hover {
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
+    font-family: 'Courier New', Courier, monospace;
   }
 
   #rabbitholes .col-3 {
@@ -372,6 +373,7 @@ button:hover {
     border: 4px solid #0d0d0d;
     background-color: #f9f9f9;
     user-select: none;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   @keyframes gradientAnimation {
@@ -646,6 +648,7 @@ button:hover {
   
   #rabbitholes {
     gap: 20px;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   #rabbitholes h3 {
@@ -682,6 +685,7 @@ button:hover {
     border: 4px solid #0d0d0d;
     background-color: #f9f9f9;
     user-select: none;
+    font-family: 'Courier New', Courier, monospace;
   }
   
   @keyframes gradientAnimation {

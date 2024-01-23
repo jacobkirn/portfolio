@@ -98,7 +98,7 @@ function RabbitHole() {
                 <hr />
                 <h4><a href="https://huemint.com/" target='_blank' rel="noreferrer">Huemint: AI color palette generator</a></h4>
                 <hr />
-                <h4><a href="https://fontjoy.com/" target='_blank' rel="noreferrer">Fontjot: AI font pairing</a></h4>
+                <h4><a href="https://fontjoy.com/" target='_blank' rel="noreferrer">Fontjoy: AI font pairing</a></h4>
             </div>
         ),
         'Websites': (
