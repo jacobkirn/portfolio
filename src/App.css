@@ -330,6 +330,7 @@ button:hover {
   }
   
   #rabbitholes {
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -355,9 +356,9 @@ button:hover {
   
   #folders {
     margin-top: 10px;
-    width: 90%;
-    margin-left: 5%;
-    height: auto;
+    height: 100px;
+    width: 100%;
+    height: 90%;
     color: #F8D775;
     position: relative;
     top: 0;
