@@ -154,7 +154,7 @@ button:hover {
 /* Home Banner */
 
 #homebanner {
-  padding: 20px 0 80px 0;
+  padding: 40px 0 80px 0;
 }
 
 #homebanner button {
@@ -189,28 +189,23 @@ button:hover {
   padding: 0 0 40px 0;
 }
 
-#profile-text-m {
-  position: relative;
-  }
+#profile-text-m h3 {
+  position: relative; /* Needed for absolute positioning of pseudo-element */
+  padding-top: 8px;
+  padding-left: 30px; /* Adjust as needed */
+  margin-bottom: 40px;
+  line-height: 40px;
+}
 
-#profile-text-m::before {
+#profile-text-m h3::before {
   content: '';
   position: absolute;
   left: 0;
   top: 0;
-  bottom: 0;
-  width: 10px; /* Width of the gradient border */
-  background: linear-gradient(to bottom, #FF6EC4, #7873F5); /* Modern pink to purple gradient */
-  z-index: 0;
-}
-
-#profile-text-m h3 {
-  position: relative;
-  padding-top: 10px;
-  padding-left: 32px;
-  margin-bottom: 20px;
-  line-height: 40px;
-  z-index: 1; /* Ensure h3 is above the gradient */
+  height: 100%;
+  width: 8px; /* Width of the border */
+  background: linear-gradient(#ff6ec4, #7873f5, #ffd98e, #ff6ec4);
+  background-size: 400% 400%;
 }
 
 #profile-section a {
