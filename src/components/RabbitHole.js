@@ -106,6 +106,8 @@ function RabbitHole() {
                 <h4><a href="https://www.webdesignmuseum.org/" target='_blank' rel="noreferrer">Web Design Museum</a></h4>
                 <hr />
                 <h4><a href="https://www.figma.com/community/file/914263431963912367" target='_blank' rel="noreferrer">Windows 95 Design System</a></h4>
+                <hr />
+                <h4><a href="https://codepen.io/diegoleme/pen/DZJBpr" target='_blank' rel="noreferrer">Cursor Effect: Whale</a></h4>
             </div>
         )
     };
