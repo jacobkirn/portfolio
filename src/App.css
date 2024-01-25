@@ -1,7 +1,84 @@
 /* CSS Reset */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins,kbd,q, s, samp, small, strike, strong, sub, sup, tt, var,
-b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, details, embed, figure, figcaption, footer, header, hgroup, menu,
-nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -77,6 +154,16 @@ button:hover {
 
 a {
   text-decoration: none;
+}
+
+#breadcrumb-item {
+  color: #0d0d0d;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#breadcrumb-item:hover {
+  text-decoration: underline;
 }
 
 /* Navbar Styles */
@@ -195,9 +282,11 @@ a {
 }
 
 #profile-text-m h3 {
-  position: relative; /* Needed for absolute positioning of pseudo-element */
+  position: relative;
+  /* Needed for absolute positioning of pseudo-element */
   padding-top: 8px;
-  padding-left: 30px; /* Adjust as needed */
+  padding-left: 30px;
+  /* Adjust as needed */
   margin-bottom: 40px;
 }
 
@@ -207,7 +296,8 @@ a {
   left: 0;
   top: 0;
   height: 100%;
-  width: 8px; /* Width of the border */
+  width: 8px;
+  /* Width of the border */
   background: linear-gradient(#ff6ec4, #7873f5, #ff6ec4);
   background-size: 400% 400%;
 }
@@ -334,7 +424,7 @@ a {
   #rabbithole-section #profile-heading {
     margin-bottom: -30px;
   }
-  
+
   #rabbitholes {
     margin-top: 40px;
     display: flex;
@@ -344,22 +434,22 @@ a {
   #rabbitholes .col-3 {
     width: 50%;
   }
-  
+
   #rabbitholes h3 {
     font-size: 28px;
     margin-top: -10px;
     text-align: center;
   }
-  
+
   #rabbitholes button {
     width: 100%;
     justify-content: center;
   }
-  
+
   #rabbitholes a {
     text-decoration: none;
   }
-  
+
   #folders {
     margin-top: -20px;
     height: 100px;
@@ -379,21 +469,21 @@ a {
     background-color: #f9f9f9;
     user-select: none;
   }
-  
+
   @keyframes gradientAnimation {
     0% {
       background-position: 0% 50%;
     }
-  
+
     50% {
       background-position: 100% 50%;
     }
-  
+
     100% {
       background-position: 0% 50%;
     }
   }
-  
+
   .popup-header {
     background: linear-gradient(-45deg, #ff6ec4, #7873f5, #ffd98e, #ff6ec4);
     background-size: 400% 400%;
@@ -405,12 +495,12 @@ a {
     border-bottom: 4px solid #0d0d0d;
     padding: 0 0 0 12px;
   }
-  
+
   .popup-header h4 {
     margin: 0;
     margin-bottom: -6px;
   }
-  
+
   .popup-header button {
     padding: 12px;
     border-right: none;
@@ -418,28 +508,34 @@ a {
     border-top: none;
     background-color: transparent;
   }
-  
+
   .popup-header button:hover {
     background-color: red;
     color: #0d0d0d;
   }
-  
+
   .popup-content {
     padding: 12px;
     overflow: auto;
   }
-  
+
   .popup-content a {
     color: blue;
     font-size: 24px;
     line-height: 20px;
   }
-  
+
   .popup-content a:hover {
     color: #ff00c8;
     cursor: pointer;
   }
 
+}
+
+/* Styleco Case Study */
+
+.styleco h1 {
+  padding: 80px 0 80px 0;
 }
 
 #footer {
@@ -612,7 +708,7 @@ a {
   #profile-text-m {
     display: none;
   }
-  
+
   .bike-icon {
     position: absolute;
     bottom: 0;
@@ -621,7 +717,7 @@ a {
     font-size: 80px;
     animation: moveBike 16s linear infinite;
   }
-  
+
   .bike-container {
     position: relative;
     height: 160px;
@@ -649,25 +745,25 @@ a {
     color: #f9f9f9;
     padding: 160px 0;
   }
-  
+
   #rabbitholes {
     gap: 20px;
   }
-  
+
   #rabbitholes h3 {
     margin-top: -20px;
     text-align: center;
   }
-  
+
   #rabbitholes button {
     width: 100%;
     justify-content: center;
   }
-  
+
   #rabbitholes a {
     text-decoration: none;
   }
-  
+
   #folders {
     width: 80%;
     margin-left: 10%;
@@ -677,11 +773,11 @@ a {
     top: 0;
     transition: top ease 0.2s;
   }
-  
+
   #folders:hover {
     top: -8px;
   }
-  
+
   .popup {
     position: fixed;
     width: 600px;
@@ -689,21 +785,21 @@ a {
     background-color: #f9f9f9;
     user-select: none;
   }
-  
+
   @keyframes gradientAnimation {
     0% {
       background-position: 0% 50%;
     }
-  
+
     50% {
       background-position: 100% 50%;
     }
-  
+
     100% {
       background-position: 0% 50%;
     }
   }
-  
+
   .popup-header {
     background: linear-gradient(-45deg, #ff6ec4, #7873f5, #ffd98e, #ff6ec4);
     background-size: 400% 400%;
@@ -715,12 +811,12 @@ a {
     border-bottom: 4px solid #0d0d0d;
     padding: 0 0 0 12px;
   }
-  
+
   .popup-header h4 {
     margin: 0;
     margin-bottom: -6px;
   }
-  
+
   .popup-header button {
     padding: 12px;
     border-right: none;
@@ -728,21 +824,21 @@ a {
     border-top: none;
     background-color: transparent;
   }
-  
+
   .popup-header button:hover {
     background-color: red;
     color: #0d0d0d;
   }
-  
+
   .popup-content {
     padding: 12px;
     overflow: auto;
   }
-  
+
   .popup-content a {
     color: blue;
   }
-  
+
   .popup-content a:hover {
     color: #ff00c8;
     cursor: pointer;
