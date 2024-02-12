@@ -4,7 +4,10 @@ import Figma from './images/figma.png';
 import Miro from './images/miro.png';
 import GPT from './images/gpt.jpg';
 import Noun from './images/noun.png';
-import StyleCoHero from './images/deviceframes-2.png'
+import StyleCoHero from './images/deviceframes-2.png';
+import Branding from './images/branding.png';
+import Entry from './images/entry.png';
+import Measurements from './images/measurements.png';
 
 function StyleCo() {
 	return <div>
@@ -60,27 +63,27 @@ function StyleCo() {
 							</div>
 							<div className='wrapper'>
 								<h3>Methods</h3>
-								<p>Our team’s approach involved in-depth interviews with target users. We sought to understand their in-person fitting room experiences and current use of technology in shopping.</p>
-								<p>Additional literature review was conducted to examine current trends and best practices in AR technology, particularly related to the fashion retail sector.</p>
+								<p>Our team’s approach involved <span className='strong'>in-depth interviews</span> with target users. We sought to understand their in-person fitting room experiences and current use of technology in shopping.</p>
+								<p>Additional <span className='strong'>literature review</span> was conducted to examine current trends and best practices in AR technology, particularly related to the fashion retail sector.</p>
 							</div>
 							<div className='wrapper'>
 								<h3>Thematic Analysis</h3>
 								<p>Several key themes were identified:</p>
 								<ul>
 									<li>
-										<p>Ambiance and Control</p>
+										<p className="li-heading">Ambiance and Control</p>
 										<p>Users showed a clear preference for modern, high-tech fitting rooms with customizable settings like light and music.</p>
 									</li>
 									<li>
-										<p>Feedback Loop</p>
+										<p className="li-heading">Feedback Loop</p>
 										<p>Users revealed the significant impact of social validation from friends and family on their purchasing decisions.</p>
 									</li>
 									<li>
-										<p>Ease of Use</p>
+										<p className="li-heading">Ease of Use</p>
 										<p>Users emphasized the necessity for clear and intuitive interactions, especially with new technologies.</p>
 									</li>
 									<li>
-										<p>Purchase Drivers</p>
+										<p className="li-heading">Purchase Drivers</p>
 										<p>While peer feedback was important, users chose sizing, aesthetics, and value for money as the ultimate factors in their purchasing decisions.</p>
 									</li>
 								</ul>
@@ -101,7 +104,7 @@ function StyleCo() {
 							<div className='wrapper'>
 								<h3>Branding and UI</h3>
 								<p>StyleCo’s branding and UI were crafted to mirror the Gen-Z influenced aesthetic dominating fashion and design web spaces, characterized by an eclectic, high-contrast color palette with pinks, yellows, blues, and purples. This design aimed to engage a young, style-concious audience with its vibrant and distinctive personality.</p>
-								<img />
+								<img src={Branding} className='product-images'/>
 							</div>
 							<div className='wrapper'>
 								<h3>Copywriting</h3>
@@ -113,25 +116,25 @@ function StyleCo() {
 								<p>In general, the prototype can be divided into four main sections:</p>
 								<ol>
 									<li>
-										<p>Product Page ➞ Entry Point</p>
-										<img />
+										<p className="li-heading">Product Page ➞ Entry Point</p>
+										<img src={Entry} className='product-images'/>
 										<p>Purpose: To capture user interest and differentiate the experience from traditional online shopping. The interactive prompt was designed to draw users into exploring the feature, boosting their engagement and time spent on the platform.</p>
 										<p>Theme: Ease of Use</p>
 									</li>
 									<li>
-										<p>Measurements ➞ Selections ➞ Camera Setup</p>
-										<img />
+										<p className="li-heading">Measurements ➞ Selections ➞ Camera Setup</p>
+										<img src={Measurements} className='product-images'/>
 										<p>Purpose: To provide a unique and accurate virtual fitting experience. Users input their measurements for tailored fitting, receive algorithm-driven clothing recommendations based on their preferences, and follow user-friendly instructions for camera setup, ensuring the AR fitting experience is realistic and seamless.</p>
 										<p>Themes: Ease of Use, Purchase Drivers</p>
 									</li>
 									<li>
-										<p>UI Tutorial</p>
+										<p className="li-heading">UI Tutorial</p>
 										<img />
 										<p>Purpose: To familiarize users with the interactive elements of the virtual fitting room. This brief tutorial is critical for promoting user adoption and encourages sustained use of the virtual fitting room.</p>
 										<p>Theme: Ease of Use</p>
 									</li>
 									<li>
-										<p>Exploring the Interfacel</p>
+										<p className="li-heading">Exploring the Interface</p>
 										<img />
 										<p>Purpose: To simluate a user exploring the AR tool post-onboarding. Users can manage their selections, choose music from a curated playlist, and share selections with friends and family. The thorough design ensures that users of all skill levels can easily engage with and benefit from the virtual fitting room.</p>
 										<p>Themes: Ease of Use, Ambiance and Control, Feedback Loop</p>
